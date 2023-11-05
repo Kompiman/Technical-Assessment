@@ -1,0 +1,48 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-plain">
+                    <div class="card-header card-header-danger">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 class="card-title mt-0">Employee Detail</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <mat-card style="margin-bottom: 20px;">
+                            <mat-card-content>
+                                <h2>{{employeeDetail.firstName}} {{employeeDetail.lastName}}</h2>
+                            </mat-card-content>
+                        </mat-card>
+                        <mat-card>
+                            <mat-card-content>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>First Name : {{employeeDetail.firstName}}</p>
+                                        <p>Last Name : {{employeeDetail.lastName}}</p>
+                                        <p>Phone : {{employeeDetail.phone}}</p>
+                                        <p>Birth Date : {{employeeDetail.birthDate}}</p>
+                                        <p>Address : {{employeeDetail.address}}</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>Email : {{employeeDetail.email}}</p>
+                                        <p>Basic Salary : Rp. {{employeeDetail.basicSalary | number}}</p>
+                                        <p style="text-transform: capitalize;">Status : {{employeeDetail.status}}</p>
+                                        <p>Group : <a style="text-transform: uppercase;">{{employeeDetail.group}}</a></p>
+                                    </div>
+                                </div>
+                            </mat-card-content>
+                          </mat-card>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button mat-stroked-button class="submit" type="submit" (click)="back()" style="width: 100%; color: white; background-color: #e73e3a;">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

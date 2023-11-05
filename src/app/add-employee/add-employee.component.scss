@@ -1,0 +1,12 @@
+mat-icon {
+    margin-right: 0px !important;
+    vertical-align: middle;
+  }
+
+  .submit:disabled {
+    background-color: grey;
+  }
+
+  .submit:enabled {
+    background-color: #e73e3a;
+  }

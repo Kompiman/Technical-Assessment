@@ -1,0 +1,32 @@
+<div class="login_form_wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-md-offset-2">
+                <!-- login_wrapper -->
+                <div class="login_wrapper">
+                    <form [formGroup]="loginForm">
+                        <div class="formsix-pos">
+                            <mat-form-field>
+                                <mat-label>Enter your email</mat-label>
+                                <input matInput placeholder="pat@example.com" formControlName="username" required>
+                                <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+                            </mat-form-field>
+                        </div>
+                        <div class="formsix-e">
+                            <mat-form-field>
+                                <mat-label>Password</mat-label>
+                                <input matInput formControlName="password" required type="password">
+                                <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+                            </mat-form-field>
+                        </div>
+                    </form>
+                    <div class="login_btn_wrapper">
+                        <!-- <a class="btn btn-primary login_btn" type="submit" (click)="onSubmit()"> Login </a> -->
+                        <button style="width: 100%;" mat-raised-button color="primary" type="submit" class="button" [disabled]="loginForm.invalid" (click)="onSubmit()">Submit Form</button>
+                    </div>
+                </div>
+                <!-- /.login_wrapper-->
+            </div>
+        </div>
+    </div>
+</div>
